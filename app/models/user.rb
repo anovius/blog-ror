@@ -18,6 +18,7 @@ class User < ApplicationRecord
     {
       id: id,
       email: email,
+      fullName: fullName,
       authentication_token: authentication_token
     }
   end

@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :session, only: [:create, :destroy]
+
+      namespace :user do
+        post 'signup', to: 'user#signup'
+      end
     end
   end
 end
